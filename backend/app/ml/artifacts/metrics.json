@@ -1,0 +1,1531 @@
+{
+  "trained_at": "2026-10-29T08:19:54+00:00",
+  "random_seed": 42,
+  "primary": {
+    "dataset": {
+      "name": "College Student Placement Factors Dataset",
+      "author": "sahilislam007",
+      "url": "https://www.kaggle.com/datasets/sahilislam007/college-student-placement-factors-dataset",
+      "features": [
+        "IQ",
+        "Prev_Sem_Result",
+        "CGPA",
+        "Academic_Performance",
+        "Internship_Experience",
+        "Extra_Curricular_Score",
+        "Communication_Skills",
+        "Projects_Completed"
+      ],
+      "target": "Placement"
+    },
+    "selected_model": "Gradient Boosting",
+    "selection_rule": "highest F1 on the held-out test set; ties broken by 5-fold CV F1, then lowest log-loss",
+    "results": [
+      {
+        "model": "Baseline (always 'Not Placed')",
+        "accuracy": 0.834,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.5,
+        "cv_f1_mean": null,
+        "cv_f1_std": null
+      },
+      {
+        "accuracy": 0.9035,
+        "precision": 0.7769,
+        "recall": 0.5873,
+        "f1": 0.669,
+        "roc_auc": 0.9451,
+        "log_loss": 0.2169,
+        "brier": 0.0683,
+        "confusion_matrix": [
+          [
+            1612,
+            56
+          ],
+          [
+            137,
+            195
+          ]
+        ],
+        "roc": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0006,
+            "tpr": 0.0783
+          },
+          {
+            "fpr": 0.0024,
+            "tpr": 0.1687
+          },
+          {
+            "fpr": 0.0036,
+            "tpr": 0.2349
+          },
+          {
+            "fpr": 0.0054,
+            "tpr": 0.259
+          },
+          {
+            "fpr": 0.0072,
+            "tpr": 0.3223
+          },
+          {
+            "fpr": 0.009,
+            "tpr": 0.3675
+          },
+          {
+            "fpr": 0.0102,
+            "tpr": 0.4066
+          },
+          {
+            "fpr": 0.015,
+            "tpr": 0.4217
+          },
+          {
+            "fpr": 0.0162,
+            "tpr": 0.4307
+          },
+          {
+            "fpr": 0.018,
+            "tpr": 0.4458
+          },
+          {
+            "fpr": 0.0198,
+            "tpr": 0.4669
+          },
+          {
+            "fpr": 0.0216,
+            "tpr": 0.4789
+          },
+          {
+            "fpr": 0.0234,
+            "tpr": 0.503
+          },
+          {
+            "fpr": 0.0258,
+            "tpr": 0.5241
+          },
+          {
+            "fpr": 0.0276,
+            "tpr": 0.5331
+          },
+          {
+            "fpr": 0.0288,
+            "tpr": 0.5633
+          },
+          {
+            "fpr": 0.03,
+            "tpr": 0.5753
+          },
+          {
+            "fpr": 0.0342,
+            "tpr": 0.5873
+          },
+          {
+            "fpr": 0.0366,
+            "tpr": 0.5934
+          },
+          {
+            "fpr": 0.0384,
+            "tpr": 0.6024
+          },
+          {
+            "fpr": 0.0408,
+            "tpr": 0.6084
+          },
+          {
+            "fpr": 0.042,
+            "tpr": 0.6235
+          },
+          {
+            "fpr": 0.0438,
+            "tpr": 0.6416
+          },
+          {
+            "fpr": 0.0456,
+            "tpr": 0.6506
+          },
+          {
+            "fpr": 0.0486,
+            "tpr": 0.6747
+          },
+          {
+            "fpr": 0.0534,
+            "tpr": 0.6898
+          },
+          {
+            "fpr": 0.0564,
+            "tpr": 0.6958
+          },
+          {
+            "fpr": 0.06,
+            "tpr": 0.7108
+          },
+          {
+            "fpr": 0.0659,
+            "tpr": 0.7349
+          },
+          {
+            "fpr": 0.0689,
+            "tpr": 0.741
+          },
+          {
+            "fpr": 0.0749,
+            "tpr": 0.75
+          },
+          {
+            "fpr": 0.0779,
+            "tpr": 0.759
+          },
+          {
+            "fpr": 0.0821,
+            "tpr": 0.7741
+          },
+          {
+            "fpr": 0.0863,
+            "tpr": 0.7801
+          },
+          {
+            "fpr": 0.0875,
+            "tpr": 0.7892
+          },
+          {
+            "fpr": 0.0893,
+            "tpr": 0.8102
+          },
+          {
+            "fpr": 0.0983,
+            "tpr": 0.8193
+          },
+          {
+            "fpr": 0.1067,
+            "tpr": 0.8253
+          },
+          {
+            "fpr": 0.1085,
+            "tpr": 0.8343
+          },
+          {
+            "fpr": 0.1247,
+            "tpr": 0.8404
+          },
+          {
+            "fpr": 0.1289,
+            "tpr": 0.8464
+          },
+          {
+            "fpr": 0.1301,
+            "tpr": 0.8584
+          },
+          {
+            "fpr": 0.1349,
+            "tpr": 0.8645
+          },
+          {
+            "fpr": 0.1445,
+            "tpr": 0.8765
+          },
+          {
+            "fpr": 0.1517,
+            "tpr": 0.8855
+          },
+          {
+            "fpr": 0.1559,
+            "tpr": 0.8946
+          },
+          {
+            "fpr": 0.1775,
+            "tpr": 0.9006
+          },
+          {
+            "fpr": 0.1829,
+            "tpr": 0.9096
+          },
+          {
+            "fpr": 0.1942,
+            "tpr": 0.9157
+          },
+          {
+            "fpr": 0.2086,
+            "tpr": 0.9247
+          },
+          {
+            "fpr": 0.211,
+            "tpr": 0.9307
+          },
+          {
+            "fpr": 0.2224,
+            "tpr": 0.9458
+          },
+          {
+            "fpr": 0.2308,
+            "tpr": 0.9578
+          },
+          {
+            "fpr": 0.2332,
+            "tpr": 0.9639
+          },
+          {
+            "fpr": 0.2392,
+            "tpr": 0.9729
+          },
+          {
+            "fpr": 0.2632,
+            "tpr": 0.9789
+          },
+          {
+            "fpr": 0.2998,
+            "tpr": 0.9849
+          },
+          {
+            "fpr": 0.3765,
+            "tpr": 0.994
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ],
+        "model": "Logistic Regression",
+        "cv_f1_mean": 0.67,
+        "cv_f1_std": 0.0235,
+        "feature_importance": [
+          {
+            "feature": "Communication_Skills",
+            "importance": 0.2856
+          },
+          {
+            "feature": "IQ",
+            "importance": 0.2475
+          },
+          {
+            "feature": "CGPA",
+            "importance": 0.2255
+          },
+          {
+            "feature": "Projects_Completed",
+            "importance": 0.1795
+          },
+          {
+            "feature": "Prev_Sem_Result",
+            "importance": 0.0513
+          },
+          {
+            "feature": "Extra_Curricular_Score",
+            "importance": 0.0067
+          },
+          {
+            "feature": "Internship_Experience",
+            "importance": 0.0022
+          },
+          {
+            "feature": "Academic_Performance",
+            "importance": 0.0017
+          }
+        ]
+      },
+      {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "log_loss": 0.0,
+        "brier": 0.0,
+        "confusion_matrix": [
+          [
+            1668,
+            0
+          ],
+          [
+            0,
+            332
+          ]
+        ],
+        "roc": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ],
+        "model": "Decision Tree",
+        "cv_f1_mean": 0.9991,
+        "cv_f1_std": 0.0018,
+        "feature_importance": [
+          {
+            "feature": "CGPA",
+            "importance": 0.3224
+          },
+          {
+            "feature": "Projects_Completed",
+            "importance": 0.2944
+          },
+          {
+            "feature": "IQ",
+            "importance": 0.2173
+          },
+          {
+            "feature": "Communication_Skills",
+            "importance": 0.1659
+          },
+          {
+            "feature": "Prev_Sem_Result",
+            "importance": 0.0
+          },
+          {
+            "feature": "Academic_Performance",
+            "importance": 0.0
+          },
+          {
+            "feature": "Internship_Experience",
+            "importance": 0.0
+          },
+          {
+            "feature": "Extra_Curricular_Score",
+            "importance": 0.0
+          }
+        ]
+      },
+      {
+        "accuracy": 0.9995,
+        "precision": 1.0,
+        "recall": 0.997,
+        "f1": 0.9985,
+        "roc_auc": 1.0,
+        "log_loss": 0.0244,
+        "brier": 0.0028,
+        "confusion_matrix": [
+          [
+            1668,
+            0
+          ],
+          [
+            1,
+            331
+          ]
+        ],
+        "roc": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0331
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0663
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0964
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1386
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1717
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.2741
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.3133
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.3645
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.4006
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.4518
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.4729
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5241
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5813
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.6837
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.7139
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.741
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.7741
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.7952
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8072
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8373
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8494
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8645
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9006
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9096
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9157
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9337
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9488
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9608
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.997
+          },
+          {
+            "fpr": 0.0012,
+            "tpr": 0.997
+          },
+          {
+            "fpr": 0.0012,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0024,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0036,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.006,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0084,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0096,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0114,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0144,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0162,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0192,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0204,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0222,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0276,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0312,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0366,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0408,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0456,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0564,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0671,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0779,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0875,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.1049,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.1313,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.1607,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.1966,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.2512,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.3279,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.4544,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ],
+        "model": "Random Forest",
+        "cv_f1_mean": 0.9994,
+        "cv_f1_std": 0.0007,
+        "feature_importance": [
+          {
+            "feature": "Communication_Skills",
+            "importance": 0.293
+          },
+          {
+            "feature": "IQ",
+            "importance": 0.2542
+          },
+          {
+            "feature": "Projects_Completed",
+            "importance": 0.1702
+          },
+          {
+            "feature": "CGPA",
+            "importance": 0.1486
+          },
+          {
+            "feature": "Prev_Sem_Result",
+            "importance": 0.1077
+          },
+          {
+            "feature": "Extra_Curricular_Score",
+            "importance": 0.0123
+          },
+          {
+            "feature": "Academic_Performance",
+            "importance": 0.0108
+          },
+          {
+            "feature": "Internship_Experience",
+            "importance": 0.0032
+          }
+        ]
+      },
+      {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "log_loss": 0.0043,
+        "brier": 0.0001,
+        "confusion_matrix": [
+          [
+            1668,
+            0
+          ],
+          [
+            0,
+            332
+          ]
+        ],
+        "roc": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0843
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0904
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0934
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1114
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1145
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1205
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5361
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5422
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.7711
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8223
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8283
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8404
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8464
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9458
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9578
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9699
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9819
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.988
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.994
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0012,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.003,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0102,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0126,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0138,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0228,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0234,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0258,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0282,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0306,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.045,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0462,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0474,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0564,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0612,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0629,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.0923,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.1019,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.1409,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.1415,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.259,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.4239,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.4814,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.5372,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.5456,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.5546,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.6811,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.6912,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.6936,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7086,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7122,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7182,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7194,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7242,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7248,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7266,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7278,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.9994,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ],
+        "model": "Gradient Boosting",
+        "cv_f1_mean": 1.0,
+        "cv_f1_std": 0.0,
+        "feature_importance": [
+          {
+            "feature": "CGPA",
+            "importance": 0.3646
+          },
+          {
+            "feature": "IQ",
+            "importance": 0.2347
+          },
+          {
+            "feature": "Communication_Skills",
+            "importance": 0.2166
+          },
+          {
+            "feature": "Projects_Completed",
+            "importance": 0.1826
+          },
+          {
+            "feature": "Prev_Sem_Result",
+            "importance": 0.0011
+          },
+          {
+            "feature": "Academic_Performance",
+            "importance": 0.0003
+          },
+          {
+            "feature": "Internship_Experience",
+            "importance": 0.0
+          },
+          {
+            "feature": "Extra_Curricular_Score",
+            "importance": 0.0
+          }
+        ]
+      }
+    ],
+    "eda": {
+      "rows": 10000,
+      "placed": 1659,
+      "not_placed": 8341,
+      "train_rows": 8000,
+      "test_rows": 2000,
+      "means_by_class": {
+        "IQ": {
+          "placed": 109.122,
+          "not_placed": 97.552
+        },
+        "Prev_Sem_Result": {
+          "placed": 8.567,
+          "not_placed": 7.33
+        },
+        "CGPA": {
+          "placed": 8.592,
+          "not_placed": 7.322
+        },
+        "Academic_Performance": {
+          "placed": 5.45,
+          "not_placed": 5.566
+        },
+        "Internship_Experience": {
+          "placed": 0.39,
+          "not_placed": 0.398
+        },
+        "Extra_Curricular_Score": {
+          "placed": 4.937,
+          "not_placed": 4.978
+        },
+        "Communication_Skills": {
+          "placed": 7.664,
+          "not_placed": 5.144
+        },
+        "Projects_Completed": {
+          "placed": 3.35,
+          "not_placed": 2.347
+        }
+      },
+      "correlation_with_target": {
+        "IQ": 0.2859,
+        "Prev_Sem_Result": 0.3179,
+        "CGPA": 0.3216,
+        "Academic_Performance": -0.0149,
+        "Internship_Experience": -0.0058,
+        "Extra_Curricular_Score": -0.0047,
+        "Communication_Skills": 0.3232,
+        "Projects_Completed": 0.2175
+      },
+      "label_rule_match": 1.0,
+      "placement_rate_by_cgpa": [
+        {
+          "bucket": "(4, 5]",
+          "rate": 0.0323,
+          "n": 248
+        },
+        {
+          "bucket": "(5, 6]",
+          "rate": 0.0485,
+          "n": 1713
+        },
+        {
+          "bucket": "(6, 7]",
+          "rate": 0.0475,
+          "n": 1937
+        },
+        {
+          "bucket": "(7, 8]",
+          "rate": 0.0497,
+          "n": 2014
+        },
+        {
+          "bucket": "(8, 9]",
+          "rate": 0.342,
+          "n": 2038
+        },
+        {
+          "bucket": "(9, 11]",
+          "rate": 0.3312,
+          "n": 2050
+        }
+      ],
+      "placement_rate_by_projects": [
+        {
+          "bucket": 0,
+          "rate": 0.0267,
+          "n": 1688
+        },
+        {
+          "bucket": 1,
+          "rate": 0.0205,
+          "n": 1609
+        },
+        {
+          "bucket": 2,
+          "rate": 0.2421,
+          "n": 1681
+        },
+        {
+          "bucket": 3,
+          "rate": 0.2391,
+          "n": 1627
+        },
+        {
+          "bucket": 4,
+          "rate": 0.225,
+          "n": 1693
+        },
+        {
+          "bucket": 5,
+          "rate": 0.2374,
+          "n": 1702
+        }
+      ]
+    }
+  },
+  "campus": {
+    "dataset": {
+      "name": "Campus Recruitment (Placement_Data_Full_Class)",
+      "author": "Ben Roshan D, Jain University Bangalore",
+      "url": "https://www.kaggle.com/datasets/benroshan/factors-affecting-campus-placement",
+      "rows": 215,
+      "placed": 148,
+      "not_placed": 67,
+      "features": [
+        "ssc_p",
+        "hsc_p",
+        "degree_p",
+        "etest_p",
+        "mba_p",
+        "workex",
+        "specialisation_fin"
+      ],
+      "note": "Gender and school-board columns are deliberately not used as features."
+    },
+    "selected_model": "Random Forest",
+    "selection_rule": "highest 5-fold CV F1 (small dataset)",
+    "results": [
+      {
+        "accuracy": 0.8605,
+        "precision": 0.875,
+        "recall": 0.9333,
+        "f1": 0.9032,
+        "roc_auc": 0.959,
+        "log_loss": 0.2702,
+        "brier": 0.0862,
+        "confusion_matrix": [
+          [
+            9,
+            4
+          ],
+          [
+            2,
+            28
+          ]
+        ],
+        "roc": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0333
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8333
+          },
+          {
+            "fpr": 0.0769,
+            "tpr": 0.8333
+          },
+          {
+            "fpr": 0.0769,
+            "tpr": 0.9
+          },
+          {
+            "fpr": 0.1538,
+            "tpr": 0.9
+          },
+          {
+            "fpr": 0.1538,
+            "tpr": 0.9333
+          },
+          {
+            "fpr": 0.4615,
+            "tpr": 0.9333
+          },
+          {
+            "fpr": 0.4615,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ],
+        "model": "Logistic Regression",
+        "cv_f1_mean": 0.9054,
+        "cv_f1_std": 0.0268,
+        "feature_importance": [
+          {
+            "feature": "ssc_p",
+            "importance": 0.2921
+          },
+          {
+            "feature": "mba_p",
+            "importance": 0.1919
+          },
+          {
+            "feature": "degree_p",
+            "importance": 0.1617
+          },
+          {
+            "feature": "hsc_p",
+            "importance": 0.1531
+          },
+          {
+            "feature": "workex",
+            "importance": 0.141
+          },
+          {
+            "feature": "specialisation_fin",
+            "importance": 0.0406
+          },
+          {
+            "feature": "etest_p",
+            "importance": 0.0197
+          }
+        ]
+      },
+      {
+        "accuracy": 0.7209,
+        "precision": 0.7647,
+        "recall": 0.8667,
+        "f1": 0.8125,
+        "roc_auc": 0.6256,
+        "log_loss": 3.8555,
+        "brier": 0.2791,
+        "confusion_matrix": [
+          [
+            5,
+            8
+          ],
+          [
+            4,
+            26
+          ]
+        ],
+        "roc": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.6154,
+            "tpr": 0.8667
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ],
+        "model": "Decision Tree",
+        "cv_f1_mean": 0.8726,
+        "cv_f1_std": 0.0295,
+        "feature_importance": [
+          {
+            "feature": "ssc_p",
+            "importance": 0.5023
+          },
+          {
+            "feature": "degree_p",
+            "importance": 0.1758
+          },
+          {
+            "feature": "hsc_p",
+            "importance": 0.1731
+          },
+          {
+            "feature": "mba_p",
+            "importance": 0.077
+          },
+          {
+            "feature": "workex",
+            "importance": 0.0528
+          },
+          {
+            "feature": "specialisation_fin",
+            "importance": 0.019
+          },
+          {
+            "feature": "etest_p",
+            "importance": 0.0
+          }
+        ]
+      },
+      {
+        "accuracy": 0.8372,
+        "precision": 0.8286,
+        "recall": 0.9667,
+        "f1": 0.8923,
+        "roc_auc": 0.9385,
+        "log_loss": 0.315,
+        "brier": 0.0967,
+        "confusion_matrix": [
+          [
+            7,
+            6
+          ],
+          [
+            1,
+            29
+          ]
+        ],
+        "roc": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0333
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0667
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.2
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.2667
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.3667
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.7667
+          },
+          {
+            "fpr": 0.0769,
+            "tpr": 0.7667
+          },
+          {
+            "fpr": 0.0769,
+            "tpr": 0.8667
+          },
+          {
+            "fpr": 0.3077,
+            "tpr": 0.8667
+          },
+          {
+            "fpr": 0.3077,
+            "tpr": 0.9
+          },
+          {
+            "fpr": 0.4615,
+            "tpr": 0.9333
+          },
+          {
+            "fpr": 0.4615,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ],
+        "model": "Random Forest",
+        "cv_f1_mean": 0.9157,
+        "cv_f1_std": 0.0184,
+        "feature_importance": [
+          {
+            "feature": "ssc_p",
+            "importance": 0.3069
+          },
+          {
+            "feature": "degree_p",
+            "importance": 0.2272
+          },
+          {
+            "feature": "hsc_p",
+            "importance": 0.1747
+          },
+          {
+            "feature": "mba_p",
+            "importance": 0.1411
+          },
+          {
+            "feature": "etest_p",
+            "importance": 0.0808
+          },
+          {
+            "feature": "workex",
+            "importance": 0.0389
+          },
+          {
+            "feature": "specialisation_fin",
+            "importance": 0.0304
+          }
+        ]
+      },
+      {
+        "accuracy": 0.8605,
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1": 0.9,
+        "roc_auc": 0.9103,
+        "log_loss": 0.3913,
+        "brier": 0.1178,
+        "confusion_matrix": [
+          [
+            10,
+            3
+          ],
+          [
+            3,
+            27
+          ]
+        ],
+        "roc": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0333
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.6333
+          },
+          {
+            "fpr": 0.0769,
+            "tpr": 0.6333
+          },
+          {
+            "fpr": 0.0769,
+            "tpr": 0.6667
+          },
+          {
+            "fpr": 0.1538,
+            "tpr": 0.6667
+          },
+          {
+            "fpr": 0.1538,
+            "tpr": 0.8333
+          },
+          {
+            "fpr": 0.2308,
+            "tpr": 0.8333
+          },
+          {
+            "fpr": 0.2308,
+            "tpr": 0.9
+          },
+          {
+            "fpr": 0.3846,
+            "tpr": 0.9
+          },
+          {
+            "fpr": 0.3846,
+            "tpr": 0.9667
+          },
+          {
+            "fpr": 0.6154,
+            "tpr": 0.9667
+          },
+          {
+            "fpr": 0.6154,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ],
+        "model": "Gradient Boosting",
+        "cv_f1_mean": 0.9007,
+        "cv_f1_std": 0.0407,
+        "feature_importance": [
+          {
+            "feature": "ssc_p",
+            "importance": 0.4675
+          },
+          {
+            "feature": "degree_p",
+            "importance": 0.2004
+          },
+          {
+            "feature": "mba_p",
+            "importance": 0.1481
+          },
+          {
+            "feature": "hsc_p",
+            "importance": 0.1135
+          },
+          {
+            "feature": "workex",
+            "importance": 0.0549
+          },
+          {
+            "feature": "specialisation_fin",
+            "importance": 0.0084
+          },
+          {
+            "feature": "etest_p",
+            "importance": 0.0072
+          }
+        ]
+      }
+    ],
+    "salary": {
+      "model": "Random Forest Regressor",
+      "rows": 148,
+      "cv_mae": 60759.4609,
+      "cv_r2": -0.2382,
+      "median_baseline_mae": 52695.9459,
+      "median_salary": 265000.0,
+      "min_salary": 200000.0,
+      "max_salary": 940000.0,
+      "finding": "Cross-validated R^2 is below 0, so a point salary prediction is not reliable. The app reports the salary range of the 15 most similar placed students instead."
+    }
+  }
+}
